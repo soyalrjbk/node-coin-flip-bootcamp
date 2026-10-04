@@ -21,7 +21,7 @@ A coin flip guessing game with a Node.js backend. Type "Heads" or "Tails" and cl
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
 ![figlet](https://img.shields.io/badge/figlet-333333?style=for-the-badge)
 
-(`http`, `fs`, `url`, `querystring`)
+Node modules: http, fs, url, querystring, and the figlet package
 
 **The server:** `server.js` uses Node's `http` module to create a server on port 8000. It looks at the path of each request with `url` and decides what to send back. For the home page, the CSS, the JavaScript, and the background image, it uses `fs.readFile` to read the file and sends it with the right `Content-Type` so the browser knows what kind of file it is. Any other path gets a 404 page made with the `figlet` package, which turns "404!!" into big ASCII-art text.
 
